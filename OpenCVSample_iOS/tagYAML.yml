@@ -1,0 +1,16 @@
+%YAML:1.0
+myobject:
+    - tag: 1
+      size: 10
+      translation: [0., 0., 0.]
+      rotation: [0., 0., 0.]
+      keep: 1
+
+    - tag: 2
+      size: 10
+      translation: [52.355, 0., 0.]
+      rotation: [0., 0., 0.]
+      keep: 1
+
+
+

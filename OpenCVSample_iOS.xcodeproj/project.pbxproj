@@ -1,0 +1,747 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		31A6B5D31B7ADB70003C88EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A6B5D21B7ADB70003C88EA /* AppDelegate.swift */; };
+		31A6B5D51B7ADB70003C88EA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A6B5D41B7ADB70003C88EA /* ViewController.swift */; };
+		31A6B5D81B7ADB70003C88EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31A6B5D61B7ADB70003C88EA /* Main.storyboard */; };
+		31A6B5DA1B7ADB70003C88EA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31A6B5D91B7ADB70003C88EA /* Images.xcassets */; };
+		31A6B5DD1B7ADB70003C88EA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31A6B5DB1B7ADB70003C88EA /* LaunchScreen.xib */; };
+		31A6B5E91B7ADB70003C88EA /* OpenCVSample_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A6B5E81B7ADB70003C88EA /* OpenCVSample_iOSTests.swift */; };
+		31A6B5F31B7ADBA4003C88EA /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31A6B5F21B7ADBA4003C88EA /* opencv2.framework */; };
+		31A6B5F41B7ADBA4003C88EA /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31A6B5F21B7ADBA4003C88EA /* opencv2.framework */; };
+		A54EFB891FC2A9EF00899921 /* SpeechRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54EFB881FC2A9EF00899921 /* SpeechRecognizer.swift */; };
+		A5692B211FDE97F1001EA9E0 /* calibrationYAML.yml in Resources */ = {isa = PBXBuildFile; fileRef = A5692B1F1FDE97F0001EA9E0 /* calibrationYAML.yml */; };
+		A5692B221FDE97F1001EA9E0 /* tagYAML.yml in Resources */ = {isa = PBXBuildFile; fileRef = A5692B201FDE97F1001EA9E0 /* tagYAML.yml */; };
+		A5ADB5E41FB29FF6001460C7 /* Chilitags3D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A5ADB5C51FB29FF3001460C7 /* Chilitags3D.cpp */; };
+		A5ADB5E51FB29FF6001460C7 /* EstimatePose3D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A5ADB5C61FB29FF3001460C7 /* EstimatePose3D.cpp */; };
+		A5ADB5E61FB29FF6001460C7 /* GrowRoi.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A5ADB5C71FB29FF3001460C7 /* GrowRoi.cpp */; };
+		A5ADB5E71FB29FF6001460C7 /* Filter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A5ADB5C81FB29FF3001460C7 /* Filter.cpp */; };
+		A5ADB5E81FB29FF6001460C7 /* ReadBits.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A5ADB5C91FB29FF3001460C7 /* ReadBits.cpp */; };
+		A5ADB5E91FB29FF6001460C7 /* ScreenOut.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A5ADB5CA1FB29FF3001460C7 /* ScreenOut.cpp */; };
+		A5ADB5EA1FB29FF6001460C7 /* EnsureGreyscale.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A5ADB5CB1FB29FF3001460C7 /* EnsureGreyscale.cpp */; };
+		A5ADB5EB1FB29FF6001460C7 /* Track.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A5ADB5CD1FB29FF4001460C7 /* Track.cpp */; };
+		A5ADB5EC1FB29FF6001460C7 /* include in Resources */ = {isa = PBXBuildFile; fileRef = A5ADB5CE1FB29FF4001460C7 /* include */; };
+		A5ADB5ED1FB29FF6001460C7 /* Filter3D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A5ADB5D21FB29FF4001460C7 /* Filter3D.cpp */; };
+		A5ADB5EE1FB29FF6001460C7 /* Detect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A5ADB5D51FB29FF5001460C7 /* Detect.cpp */; };
+		A5ADB5EF1FB29FF6001460C7 /* Refine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A5ADB5D61FB29FF5001460C7 /* Refine.cpp */; };
+		A5ADB5F01FB29FF6001460C7 /* Chilitags.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A5ADB5D91FB29FF5001460C7 /* Chilitags.cpp */; };
+		A5ADB5F11FB29FF6001460C7 /* Codec.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A5ADB5DA1FB29FF5001460C7 /* Codec.cpp */; };
+		A5ADB5F21FB29FF6001460C7 /* Decode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A5ADB5DF1FB29FF6001460C7 /* Decode.cpp */; };
+		A5ADB5F31FB29FF6001460C7 /* FindQuads.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A5ADB5E21FB29FF6001460C7 /* FindQuads.cpp */; };
+		A5ADB5F41FB29FF6001460C7 /* myChilitags.mm in Sources */ = {isa = PBXBuildFile; fileRef = A5ADB5E31FB29FF6001460C7 /* myChilitags.mm */; };
+		A5E9547D2150575600873A3C /* map.json in Resources */ = {isa = PBXBuildFile; fileRef = A5E9547C2150575600873A3C /* map.json */; };
+		A5E9547F2150576200873A3C /* globe.json in Resources */ = {isa = PBXBuildFile; fileRef = A5E9547E2150576200873A3C /* globe.json */; };
+		A5E954822150585200873A3C /* JsonGlobe.json in Resources */ = {isa = PBXBuildFile; fileRef = A5E954802150585200873A3C /* JsonGlobe.json */; };
+		A5E954832150585200873A3C /* plane.json in Resources */ = {isa = PBXBuildFile; fileRef = A5E954812150585200873A3C /* plane.json */; };
+		A5E954852150586600873A3C /* volcano.json in Resources */ = {isa = PBXBuildFile; fileRef = A5E954842150586600873A3C /* volcano.json */; };
+		C209F844209E26D400B0F9DE /* nolabel.wav in Resources */ = {isa = PBXBuildFile; fileRef = C209F843209E26D400B0F9DE /* nolabel.wav */; };
+		C209F846209E26D900B0F9DE /* jet.wav in Resources */ = {isa = PBXBuildFile; fileRef = C209F845209E26D900B0F9DE /* jet.wav */; };
+		C209F848209E26DE00B0F9DE /* cockpit.wav in Resources */ = {isa = PBXBuildFile; fileRef = C209F847209E26DE00B0F9DE /* cockpit.wav */; };
+		C209F84A209E26E500B0F9DE /* body.wav in Resources */ = {isa = PBXBuildFile; fileRef = C209F849209E26E500B0F9DE /* body.wav */; };
+		C244E65920914A330096BE46 /* iOSDevCenters+GIF.swift in Sources */ = {isa = PBXBuildFile; fileRef = C244E65820914A320096BE46 /* iOSDevCenters+GIF.swift */; };
+		C257C036209A41F70000416F /* planeTagYAML.yml in Resources */ = {isa = PBXBuildFile; fileRef = C257C034209A41F60000416F /* planeTagYAML.yml */; };
+		C257C03B209ABFB00000416F /* w-o-black.gif in Resources */ = {isa = PBXBuildFile; fileRef = C257C03A209ABFB00000416F /* w-o-black.gif */; };
+		C257C03D209AC0FB0000416F /* erruption.wav in Resources */ = {isa = PBXBuildFile; fileRef = C257C03C209AC0FB0000416F /* erruption.wav */; };
+		C2819FB62096AFEC00EECE65 /* TransView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2819FB52096AFEC00EECE65 /* TransView.swift */; };
+		C29D3D8F207F045800F76D73 /* cascade.wav in Resources */ = {isa = PBXBuildFile; fileRef = C29D3D8E207F045800F76D73 /* cascade.wav */; };
+		C29D3D94207FB13F00F76D73 /* coast.wav in Resources */ = {isa = PBXBuildFile; fileRef = C29D3D90207FB13E00F76D73 /* coast.wav */; };
+		C29D3D95207FB13F00F76D73 /* okanogan.wav in Resources */ = {isa = PBXBuildFile; fileRef = C29D3D91207FB13E00F76D73 /* okanogan.wav */; };
+		C29D3D96207FB13F00F76D73 /* western.wav in Resources */ = {isa = PBXBuildFile; fileRef = C29D3D92207FB13E00F76D73 /* western.wav */; };
+		C29D3D97207FB13F00F76D73 /* columbia.wav in Resources */ = {isa = PBXBuildFile; fileRef = C29D3D93207FB13F00F76D73 /* columbia.wav */; };
+		C2BEA73A208513260012770E /* globeTagYAML.yml in Resources */ = {isa = PBXBuildFile; fileRef = C2BEA739208513260012770E /* globeTagYAML.yml */; };
+		C2BEA73C2085132F0012770E /* mapTagYAML.yml in Resources */ = {isa = PBXBuildFile; fileRef = C2BEA73B2085132F0012770E /* mapTagYAML.yml */; };
+		C2BEA73E208513330012770E /* volcanoTagYAML.yml in Resources */ = {isa = PBXBuildFile; fileRef = C2BEA73D208513330012770E /* volcanoTagYAML.yml */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		31A6B5E31B7ADB70003C88EA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 31A6B5C51B7ADB70003C88EA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 31A6B5CC1B7ADB70003C88EA;
+			remoteInfo = OpenCVSample_iOS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		31A6B5CD1B7ADB70003C88EA /* OpenCVSample_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenCVSample_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		31A6B5D11B7ADB70003C88EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		31A6B5D21B7ADB70003C88EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		31A6B5D41B7ADB70003C88EA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		31A6B5D71B7ADB70003C88EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		31A6B5D91B7ADB70003C88EA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		31A6B5DC1B7ADB70003C88EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		31A6B5E21B7ADB70003C88EA /* OpenCVSample_iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpenCVSample_iOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		31A6B5E71B7ADB70003C88EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		31A6B5E81B7ADB70003C88EA /* OpenCVSample_iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenCVSample_iOSTests.swift; sourceTree = "<group>"; };
+		31A6B5F21B7ADBA4003C88EA /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
+		31A6B5F61B7ADEF4003C88EA /* OpenCVSample_iOS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OpenCVSample_iOS-Bridging-Header.h"; sourceTree = "<group>"; };
+		A54EFB881FC2A9EF00899921 /* SpeechRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechRecognizer.swift; sourceTree = "<group>"; };
+		A5692B1F1FDE97F0001EA9E0 /* calibrationYAML.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = calibrationYAML.yml; sourceTree = "<group>"; };
+		A5692B201FDE97F1001EA9E0 /* tagYAML.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = tagYAML.yml; sourceTree = "<group>"; };
+		A5ADB5C51FB29FF3001460C7 /* Chilitags3D.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Chilitags3D.cpp; sourceTree = "<group>"; };
+		A5ADB5C61FB29FF3001460C7 /* EstimatePose3D.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = EstimatePose3D.cpp; sourceTree = "<group>"; };
+		A5ADB5C71FB29FF3001460C7 /* GrowRoi.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GrowRoi.cpp; sourceTree = "<group>"; };
+		A5ADB5C81FB29FF3001460C7 /* Filter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Filter.cpp; sourceTree = "<group>"; };
+		A5ADB5C91FB29FF3001460C7 /* ReadBits.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ReadBits.cpp; sourceTree = "<group>"; };
+		A5ADB5CA1FB29FF3001460C7 /* ScreenOut.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ScreenOut.cpp; sourceTree = "<group>"; };
+		A5ADB5CB1FB29FF3001460C7 /* EnsureGreyscale.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = EnsureGreyscale.cpp; sourceTree = "<group>"; };
+		A5ADB5CC1FB29FF4001460C7 /* ScreenOut.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ScreenOut.hpp; sourceTree = "<group>"; };
+		A5ADB5CD1FB29FF4001460C7 /* Track.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Track.cpp; sourceTree = "<group>"; };
+		A5ADB5CE1FB29FF4001460C7 /* include */ = {isa = PBXFileReference; lastKnownFileType = folder; path = include; sourceTree = "<group>"; };
+		A5ADB5CF1FB29FF4001460C7 /* FindQuads.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = FindQuads.hpp; sourceTree = "<group>"; };
+		A5ADB5D01FB29FF4001460C7 /* Decode.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Decode.hpp; sourceTree = "<group>"; };
+		A5ADB5D11FB29FF4001460C7 /* ReadBits.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ReadBits.hpp; sourceTree = "<group>"; };
+		A5ADB5D21FB29FF4001460C7 /* Filter3D.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Filter3D.cpp; sourceTree = "<group>"; };
+		A5ADB5D31FB29FF4001460C7 /* EstimatePose3D.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = EstimatePose3D.hpp; sourceTree = "<group>"; };
+		A5ADB5D41FB29FF5001460C7 /* Detect.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Detect.hpp; sourceTree = "<group>"; };
+		A5ADB5D51FB29FF5001460C7 /* Detect.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Detect.cpp; sourceTree = "<group>"; };
+		A5ADB5D61FB29FF5001460C7 /* Refine.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Refine.cpp; sourceTree = "<group>"; };
+		A5ADB5D71FB29FF5001460C7 /* Refine.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Refine.hpp; sourceTree = "<group>"; };
+		A5ADB5D81FB29FF5001460C7 /* Filter3D.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Filter3D.hpp; sourceTree = "<group>"; };
+		A5ADB5D91FB29FF5001460C7 /* Chilitags.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Chilitags.cpp; sourceTree = "<group>"; };
+		A5ADB5DA1FB29FF5001460C7 /* Codec.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Codec.cpp; sourceTree = "<group>"; };
+		A5ADB5DB1FB29FF5001460C7 /* Track.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Track.hpp; sourceTree = "<group>"; };
+		A5ADB5DC1FB29FF6001460C7 /* EnsureGreyscale.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = EnsureGreyscale.hpp; sourceTree = "<group>"; };
+		A5ADB5DD1FB29FF6001460C7 /* Codec.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Codec.hpp; sourceTree = "<group>"; };
+		A5ADB5DE1FB29FF6001460C7 /* GrowRoi.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = GrowRoi.hpp; sourceTree = "<group>"; };
+		A5ADB5DF1FB29FF6001460C7 /* Decode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Decode.cpp; sourceTree = "<group>"; };
+		A5ADB5E01FB29FF6001460C7 /* myChilitags.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = myChilitags.h; sourceTree = "<group>"; };
+		A5ADB5E11FB29FF6001460C7 /* Filter.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Filter.hpp; sourceTree = "<group>"; };
+		A5ADB5E21FB29FF6001460C7 /* FindQuads.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FindQuads.cpp; sourceTree = "<group>"; };
+		A5ADB5E31FB29FF6001460C7 /* myChilitags.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = myChilitags.mm; sourceTree = "<group>"; };
+		A5E9547C2150575600873A3C /* map.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = map.json; sourceTree = "<group>"; };
+		A5E9547E2150576200873A3C /* globe.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = globe.json; sourceTree = "<group>"; };
+		A5E954802150585200873A3C /* JsonGlobe.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = JsonGlobe.json; sourceTree = "<group>"; };
+		A5E954812150585200873A3C /* plane.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = plane.json; sourceTree = "<group>"; };
+		A5E954842150586600873A3C /* volcano.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = volcano.json; sourceTree = "<group>"; };
+		C209F843209E26D400B0F9DE /* nolabel.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = nolabel.wav; sourceTree = "<group>"; };
+		C209F845209E26D900B0F9DE /* jet.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = jet.wav; sourceTree = "<group>"; };
+		C209F847209E26DE00B0F9DE /* cockpit.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = cockpit.wav; sourceTree = "<group>"; };
+		C209F849209E26E500B0F9DE /* body.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = body.wav; sourceTree = "<group>"; };
+		C244E65820914A320096BE46 /* iOSDevCenters+GIF.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "iOSDevCenters+GIF.swift"; sourceTree = "<group>"; };
+		C257C034209A41F60000416F /* planeTagYAML.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = planeTagYAML.yml; sourceTree = "<group>"; };
+		C257C03A209ABFB00000416F /* w-o-black.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "w-o-black.gif"; sourceTree = "<group>"; };
+		C257C03C209AC0FB0000416F /* erruption.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = erruption.wav; sourceTree = "<group>"; };
+		C2819FB52096AFEC00EECE65 /* TransView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransView.swift; sourceTree = "<group>"; };
+		C29D3D8E207F045800F76D73 /* cascade.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = cascade.wav; sourceTree = "<group>"; };
+		C29D3D90207FB13E00F76D73 /* coast.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = coast.wav; sourceTree = "<group>"; };
+		C29D3D91207FB13E00F76D73 /* okanogan.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = okanogan.wav; sourceTree = "<group>"; };
+		C29D3D92207FB13E00F76D73 /* western.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = western.wav; sourceTree = "<group>"; };
+		C29D3D93207FB13F00F76D73 /* columbia.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = columbia.wav; sourceTree = "<group>"; };
+		C2BEA739208513260012770E /* globeTagYAML.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = globeTagYAML.yml; sourceTree = "<group>"; };
+		C2BEA73B2085132F0012770E /* mapTagYAML.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mapTagYAML.yml; sourceTree = "<group>"; };
+		C2BEA73D208513330012770E /* volcanoTagYAML.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = volcanoTagYAML.yml; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		31A6B5CA1B7ADB70003C88EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31A6B5F31B7ADBA4003C88EA /* opencv2.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		31A6B5DF1B7ADB70003C88EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31A6B5F41B7ADBA4003C88EA /* opencv2.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		31A6B5C41B7ADB70003C88EA = {
+			isa = PBXGroup;
+			children = (
+				31A6B5CF1B7ADB70003C88EA /* OpenCVSample_iOS */,
+				31A6B5E51B7ADB70003C88EA /* OpenCVSample_iOSTests */,
+				31A6B5F51B7ADBAA003C88EA /* Frameworks */,
+				31A6B5CE1B7ADB70003C88EA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		31A6B5CE1B7ADB70003C88EA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				31A6B5CD1B7ADB70003C88EA /* OpenCVSample_iOS.app */,
+				31A6B5E21B7ADB70003C88EA /* OpenCVSample_iOSTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		31A6B5CF1B7ADB70003C88EA /* OpenCVSample_iOS */ = {
+			isa = PBXGroup;
+			children = (
+				A5ADB5E01FB29FF6001460C7 /* myChilitags.h */,
+				A5ADB5E31FB29FF6001460C7 /* myChilitags.mm */,
+				31A6B5D21B7ADB70003C88EA /* AppDelegate.swift */,
+				31A6B5D41B7ADB70003C88EA /* ViewController.swift */,
+				31A6B5F61B7ADEF4003C88EA /* OpenCVSample_iOS-Bridging-Header.h */,
+				C2819FB52096AFEC00EECE65 /* TransView.swift */,
+				A54EFB881FC2A9EF00899921 /* SpeechRecognizer.swift */,
+				C244E65820914A320096BE46 /* iOSDevCenters+GIF.swift */,
+				31A6B5D61B7ADB70003C88EA /* Main.storyboard */,
+				31A6B5D91B7ADB70003C88EA /* Images.xcassets */,
+				31A6B5DB1B7ADB70003C88EA /* LaunchScreen.xib */,
+				31A6B5D01B7ADB70003C88EA /* Supporting Files */,
+				A5ADB5CE1FB29FF4001460C7 /* include */,
+				A5ADB5F71FB2A0D5001460C7 /* Chilitags */,
+			);
+			path = OpenCVSample_iOS;
+			sourceTree = "<group>";
+		};
+		31A6B5D01B7ADB70003C88EA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A5E954842150586600873A3C /* volcano.json */,
+				A5E954802150585200873A3C /* JsonGlobe.json */,
+				A5E954812150585200873A3C /* plane.json */,
+				C2BEA739208513260012770E /* globeTagYAML.yml */,
+				A5E9547E2150576200873A3C /* globe.json */,
+				C2BEA73D208513330012770E /* volcanoTagYAML.yml */,
+				C2BEA73B2085132F0012770E /* mapTagYAML.yml */,
+				A5E9547C2150575600873A3C /* map.json */,
+				C209F845209E26D900B0F9DE /* jet.wav */,
+				C209F847209E26DE00B0F9DE /* cockpit.wav */,
+				C209F849209E26E500B0F9DE /* body.wav */,
+				C257C03A209ABFB00000416F /* w-o-black.gif */,
+				C257C034209A41F60000416F /* planeTagYAML.yml */,
+				A5692B1F1FDE97F0001EA9E0 /* calibrationYAML.yml */,
+				C209F843209E26D400B0F9DE /* nolabel.wav */,
+				C257C03C209AC0FB0000416F /* erruption.wav */,
+				C29D3D8E207F045800F76D73 /* cascade.wav */,
+				C29D3D90207FB13E00F76D73 /* coast.wav */,
+				C29D3D93207FB13F00F76D73 /* columbia.wav */,
+				C29D3D91207FB13E00F76D73 /* okanogan.wav */,
+				C29D3D92207FB13E00F76D73 /* western.wav */,
+				A5692B201FDE97F1001EA9E0 /* tagYAML.yml */,
+				31A6B5D11B7ADB70003C88EA /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		31A6B5E51B7ADB70003C88EA /* OpenCVSample_iOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				31A6B5E81B7ADB70003C88EA /* OpenCVSample_iOSTests.swift */,
+				31A6B5E61B7ADB70003C88EA /* Supporting Files */,
+			);
+			path = OpenCVSample_iOSTests;
+			sourceTree = "<group>";
+		};
+		31A6B5E61B7ADB70003C88EA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				31A6B5E71B7ADB70003C88EA /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		31A6B5F51B7ADBAA003C88EA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				31A6B5F21B7ADBA4003C88EA /* opencv2.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A5ADB5F71FB2A0D5001460C7 /* Chilitags */ = {
+			isa = PBXGroup;
+			children = (
+				A5ADB5D91FB29FF5001460C7 /* Chilitags.cpp */,
+				A5ADB5C51FB29FF3001460C7 /* Chilitags3D.cpp */,
+				A5ADB5DA1FB29FF5001460C7 /* Codec.cpp */,
+				A5ADB5DD1FB29FF6001460C7 /* Codec.hpp */,
+				A5ADB5DF1FB29FF6001460C7 /* Decode.cpp */,
+				A5ADB5D01FB29FF4001460C7 /* Decode.hpp */,
+				A5ADB5D51FB29FF5001460C7 /* Detect.cpp */,
+				A5ADB5D41FB29FF5001460C7 /* Detect.hpp */,
+				A5ADB5CB1FB29FF3001460C7 /* EnsureGreyscale.cpp */,
+				A5ADB5DC1FB29FF6001460C7 /* EnsureGreyscale.hpp */,
+				A5ADB5C61FB29FF3001460C7 /* EstimatePose3D.cpp */,
+				A5ADB5D31FB29FF4001460C7 /* EstimatePose3D.hpp */,
+				A5ADB5C81FB29FF3001460C7 /* Filter.cpp */,
+				A5ADB5E11FB29FF6001460C7 /* Filter.hpp */,
+				A5ADB5D21FB29FF4001460C7 /* Filter3D.cpp */,
+				A5ADB5D81FB29FF5001460C7 /* Filter3D.hpp */,
+				A5ADB5E21FB29FF6001460C7 /* FindQuads.cpp */,
+				A5ADB5CF1FB29FF4001460C7 /* FindQuads.hpp */,
+				A5ADB5C71FB29FF3001460C7 /* GrowRoi.cpp */,
+				A5ADB5DE1FB29FF6001460C7 /* GrowRoi.hpp */,
+				A5ADB5C91FB29FF3001460C7 /* ReadBits.cpp */,
+				A5ADB5D11FB29FF4001460C7 /* ReadBits.hpp */,
+				A5ADB5D61FB29FF5001460C7 /* Refine.cpp */,
+				A5ADB5D71FB29FF5001460C7 /* Refine.hpp */,
+				A5ADB5CA1FB29FF3001460C7 /* ScreenOut.cpp */,
+				A5ADB5CC1FB29FF4001460C7 /* ScreenOut.hpp */,
+				A5ADB5CD1FB29FF4001460C7 /* Track.cpp */,
+				A5ADB5DB1FB29FF5001460C7 /* Track.hpp */,
+			);
+			name = Chilitags;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		31A6B5CC1B7ADB70003C88EA /* OpenCVSample_iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 31A6B5EC1B7ADB70003C88EA /* Build configuration list for PBXNativeTarget "OpenCVSample_iOS" */;
+			buildPhases = (
+				31A6B5C91B7ADB70003C88EA /* Sources */,
+				31A6B5CA1B7ADB70003C88EA /* Frameworks */,
+				31A6B5CB1B7ADB70003C88EA /* Resources */,
+				A5ADB55A1FB1D520001460C7 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OpenCVSample_iOS;
+			productName = OpenCVSample_iOS;
+			productReference = 31A6B5CD1B7ADB70003C88EA /* OpenCVSample_iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		31A6B5E11B7ADB70003C88EA /* OpenCVSample_iOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 31A6B5EF1B7ADB70003C88EA /* Build configuration list for PBXNativeTarget "OpenCVSample_iOSTests" */;
+			buildPhases = (
+				31A6B5DE1B7ADB70003C88EA /* Sources */,
+				31A6B5DF1B7ADB70003C88EA /* Frameworks */,
+				31A6B5E01B7ADB70003C88EA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				31A6B5E41B7ADB70003C88EA /* PBXTargetDependency */,
+			);
+			name = OpenCVSample_iOSTests;
+			productName = OpenCVSample_iOSTests;
+			productReference = 31A6B5E21B7ADB70003C88EA /* OpenCVSample_iOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		31A6B5C51B7ADB70003C88EA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = Talkit;
+				TargetAttributes = {
+					31A6B5CC1B7ADB70003C88EA = {
+						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = VXMT5SS6L4;
+						LastSwiftMigration = 0900;
+						ProvisioningStyle = Automatic;
+					};
+					31A6B5E11B7ADB70003C88EA = {
+						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = VXMT5SS6L4;
+						LastSwiftMigration = 0900;
+						TestTargetID = 31A6B5CC1B7ADB70003C88EA;
+					};
+				};
+			};
+			buildConfigurationList = 31A6B5C81B7ADB70003C88EA /* Build configuration list for PBXProject "OpenCVSample_iOS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 31A6B5C41B7ADB70003C88EA;
+			productRefGroup = 31A6B5CE1B7ADB70003C88EA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				31A6B5CC1B7ADB70003C88EA /* OpenCVSample_iOS */,
+				31A6B5E11B7ADB70003C88EA /* OpenCVSample_iOSTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		31A6B5CB1B7ADB70003C88EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C209F84A209E26E500B0F9DE /* body.wav in Resources */,
+				C209F844209E26D400B0F9DE /* nolabel.wav in Resources */,
+				C29D3D8F207F045800F76D73 /* cascade.wav in Resources */,
+				31A6B5D81B7ADB70003C88EA /* Main.storyboard in Resources */,
+				A5E954852150586600873A3C /* volcano.json in Resources */,
+				C2BEA73A208513260012770E /* globeTagYAML.yml in Resources */,
+				C209F848209E26DE00B0F9DE /* cockpit.wav in Resources */,
+				A5692B211FDE97F1001EA9E0 /* calibrationYAML.yml in Resources */,
+				A5692B221FDE97F1001EA9E0 /* tagYAML.yml in Resources */,
+				31A6B5DD1B7ADB70003C88EA /* LaunchScreen.xib in Resources */,
+				A5E9547D2150575600873A3C /* map.json in Resources */,
+				C209F846209E26D900B0F9DE /* jet.wav in Resources */,
+				C257C03D209AC0FB0000416F /* erruption.wav in Resources */,
+				C29D3D97207FB13F00F76D73 /* columbia.wav in Resources */,
+				C29D3D96207FB13F00F76D73 /* western.wav in Resources */,
+				C2BEA73C2085132F0012770E /* mapTagYAML.yml in Resources */,
+				31A6B5DA1B7ADB70003C88EA /* Images.xcassets in Resources */,
+				C2BEA73E208513330012770E /* volcanoTagYAML.yml in Resources */,
+				A5E954822150585200873A3C /* JsonGlobe.json in Resources */,
+				A5E9547F2150576200873A3C /* globe.json in Resources */,
+				A5ADB5EC1FB29FF6001460C7 /* include in Resources */,
+				C29D3D94207FB13F00F76D73 /* coast.wav in Resources */,
+				A5E954832150585200873A3C /* plane.json in Resources */,
+				C257C036209A41F70000416F /* planeTagYAML.yml in Resources */,
+				C29D3D95207FB13F00F76D73 /* okanogan.wav in Resources */,
+				C257C03B209ABFB00000416F /* w-o-black.gif in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		31A6B5E01B7ADB70003C88EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A5ADB55A1FB1D520001460C7 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		31A6B5C91B7ADB70003C88EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5ADB5E81FB29FF6001460C7 /* ReadBits.cpp in Sources */,
+				C244E65920914A330096BE46 /* iOSDevCenters+GIF.swift in Sources */,
+				A5ADB5EF1FB29FF6001460C7 /* Refine.cpp in Sources */,
+				A5ADB5EA1FB29FF6001460C7 /* EnsureGreyscale.cpp in Sources */,
+				31A6B5D51B7ADB70003C88EA /* ViewController.swift in Sources */,
+				A5ADB5E71FB29FF6001460C7 /* Filter.cpp in Sources */,
+				C2819FB62096AFEC00EECE65 /* TransView.swift in Sources */,
+				A5ADB5EE1FB29FF6001460C7 /* Detect.cpp in Sources */,
+				A5ADB5F41FB29FF6001460C7 /* myChilitags.mm in Sources */,
+				A5ADB5F01FB29FF6001460C7 /* Chilitags.cpp in Sources */,
+				A5ADB5F11FB29FF6001460C7 /* Codec.cpp in Sources */,
+				A54EFB891FC2A9EF00899921 /* SpeechRecognizer.swift in Sources */,
+				A5ADB5E61FB29FF6001460C7 /* GrowRoi.cpp in Sources */,
+				A5ADB5E51FB29FF6001460C7 /* EstimatePose3D.cpp in Sources */,
+				A5ADB5ED1FB29FF6001460C7 /* Filter3D.cpp in Sources */,
+				A5ADB5E41FB29FF6001460C7 /* Chilitags3D.cpp in Sources */,
+				A5ADB5EB1FB29FF6001460C7 /* Track.cpp in Sources */,
+				A5ADB5F31FB29FF6001460C7 /* FindQuads.cpp in Sources */,
+				A5ADB5E91FB29FF6001460C7 /* ScreenOut.cpp in Sources */,
+				31A6B5D31B7ADB70003C88EA /* AppDelegate.swift in Sources */,
+				A5ADB5F21FB29FF6001460C7 /* Decode.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		31A6B5DE1B7ADB70003C88EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31A6B5E91B7ADB70003C88EA /* OpenCVSample_iOSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		31A6B5E41B7ADB70003C88EA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 31A6B5CC1B7ADB70003C88EA /* OpenCVSample_iOS */;
+			targetProxy = 31A6B5E31B7ADB70003C88EA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		31A6B5D61B7ADB70003C88EA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				31A6B5D71B7ADB70003C88EA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		31A6B5DB1B7ADB70003C88EA /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				31A6B5DC1B7ADB70003C88EA /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		31A6B5EA1B7ADB70003C88EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		31A6B5EB1B7ADB70003C88EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		31A6B5ED1B7ADB70003C88EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VXMT5SS6L4;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/OpenCVSample_iOS/include";
+				INFOPLIST_FILE = OpenCVSample_iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					/usr/local/lib/,
+					"$(inherited)",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = "Talkit-iOS.zzh";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "OpenCVSample_iOS/OpenCVSample_iOS-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				VALID_ARCHS = "arm64 armv7 armv7s";
+			};
+			name = Debug;
+		};
+		31A6B5EE1B7ADB70003C88EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VXMT5SS6L4;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/OpenCVSample_iOS/include";
+				INFOPLIST_FILE = OpenCVSample_iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					/usr/local/lib/,
+					"$(inherited)",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = "Talkit-iOS.zzh";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "OpenCVSample_iOS/OpenCVSample_iOS-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				VALID_ARCHS = "arm64 armv7 armv7s";
+			};
+			name = Release;
+		};
+		31A6B5F01B7ADB70003C88EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = VXMT5SS6L4;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = OpenCVSample_iOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "net.homeunix.hio.ipa.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "OpenCVSample_iOS/OpenCVSample_iOS-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OpenCVSample_iOS.app/OpenCVSample_iOS";
+			};
+			name = Debug;
+		};
+		31A6B5F11B7ADB70003C88EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = VXMT5SS6L4;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = OpenCVSample_iOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "net.homeunix.hio.ipa.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "OpenCVSample_iOS/OpenCVSample_iOS-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OpenCVSample_iOS.app/OpenCVSample_iOS";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		31A6B5C81B7ADB70003C88EA /* Build configuration list for PBXProject "OpenCVSample_iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				31A6B5EA1B7ADB70003C88EA /* Debug */,
+				31A6B5EB1B7ADB70003C88EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		31A6B5EC1B7ADB70003C88EA /* Build configuration list for PBXNativeTarget "OpenCVSample_iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				31A6B5ED1B7ADB70003C88EA /* Debug */,
+				31A6B5EE1B7ADB70003C88EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		31A6B5EF1B7ADB70003C88EA /* Build configuration list for PBXNativeTarget "OpenCVSample_iOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				31A6B5F01B7ADB70003C88EA /* Debug */,
+				31A6B5F11B7ADB70003C88EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 31A6B5C51B7ADB70003C88EA /* Project object */;
+}

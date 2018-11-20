@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="OpenCVSample_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="H6w-0j-klE"/>
+                        <viewControllerLayoutGuide type="bottom" id="UgB-M4-Cho"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="iSt-CV-jMe">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uqp-jk-3ZR" userLabel="Calibration">
+                                <rect key="frame" x="309" y="597" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="0fh-fQ-FtJ"/>
+                                    <constraint firstAttribute="width" constant="50" id="WiM-BY-63f"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="setting-2"/>
+                                <connections>
+                                    <action selector="CalibrationPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="P4T-R8-Zf3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hnD-ks-Kfn" userLabel="ModelChoose">
+                                <rect key="frame" x="16" y="597" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="UMO-Xg-IV4"/>
+                                    <constraint firstAttribute="height" constant="50" id="YZa-aU-WZy"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="list-2"/>
+                                <connections>
+                                    <action selector="ModelChoosePressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="RbN-UP-him"/>
+                                </connections>
+                            </button>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ag1-SD-FLH">
+                                <rect key="frame" x="0.0" y="427" width="375" height="162"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="162" id="KVe-tj-pCz"/>
+                                </constraints>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select a Model" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2F7-6W-3pt">
+                                <rect key="frame" x="74" y="612" width="227" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="JvA-IM-cvo"/>
+                                    <constraint firstAttribute="width" constant="227" id="paZ-F5-ypp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Uqp-jk-3ZR" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="50h-Tp-B4q"/>
+                            <constraint firstItem="UgB-M4-Cho" firstAttribute="top" secondItem="2F7-6W-3pt" secondAttribute="bottom" constant="34" id="6Iy-b2-H9E"/>
+                            <constraint firstItem="iSt-CV-jMe" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="85L-Zx-X2A"/>
+                            <constraint firstItem="Uqp-jk-3ZR" firstAttribute="leading" secondItem="2F7-6W-3pt" secondAttribute="trailing" constant="8" id="8Pq-WW-Z7e"/>
+                            <constraint firstItem="iSt-CV-jMe" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="DaS-Rz-QUJ"/>
+                            <constraint firstItem="Uqp-jk-3ZR" firstAttribute="top" secondItem="Ag1-SD-FLH" secondAttribute="bottom" constant="8" id="FBw-V0-xzh"/>
+                            <constraint firstAttribute="trailing" secondItem="Ag1-SD-FLH" secondAttribute="trailing" id="Jps-Rc-VxZ"/>
+                            <constraint firstItem="hnD-ks-Kfn" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="KJy-rl-wvy"/>
+                            <constraint firstItem="2F7-6W-3pt" firstAttribute="leading" secondItem="hnD-ks-Kfn" secondAttribute="trailing" constant="8" id="aSU-07-1BB"/>
+                            <constraint firstItem="2F7-6W-3pt" firstAttribute="top" secondItem="Ag1-SD-FLH" secondAttribute="bottom" constant="23" id="bEU-8H-4AM"/>
+                            <constraint firstItem="UgB-M4-Cho" firstAttribute="top" secondItem="Uqp-jk-3ZR" secondAttribute="bottom" constant="20" id="fwV-Ds-N3I"/>
+                            <constraint firstAttribute="trailing" secondItem="iSt-CV-jMe" secondAttribute="trailing" id="oTM-Ss-fsz"/>
+                            <constraint firstItem="Ag1-SD-FLH" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="tn8-3c-EVH"/>
+                            <constraint firstItem="UgB-M4-Cho" firstAttribute="top" secondItem="hnD-ks-Kfn" secondAttribute="bottom" constant="20" id="xDN-Dl-dOT"/>
+                            <constraint firstAttribute="bottom" secondItem="iSt-CV-jMe" secondAttribute="bottom" id="xGE-Hb-Wep"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="ModelChooseBtn" destination="hnD-ks-Kfn" id="N7L-UO-17c"/>
+                        <outlet property="PickerView" destination="Ag1-SD-FLH" id="fGt-IS-jbB"/>
+                        <outlet property="calibrationBtn" destination="Uqp-jk-3ZR" id="OSo-kl-L9A"/>
+                        <outlet property="imageView" destination="iSt-CV-jMe" id="r2e-I9-uwq"/>
+                        <outlet property="modelLabel" destination="2F7-6W-3pt" id="me1-Ef-o2c"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="24.800000000000001" y="28.335832083958024"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="list-2" width="200" height="200"/>
+        <image name="setting-2" width="200" height="200"/>
+    </resources>
+</document>
